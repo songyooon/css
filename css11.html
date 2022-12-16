@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+
+    <style>
+    
+    .lst {width: 1280px; height: 480px; clear:both; margin:0 auto;}
+    .lst:after {content:""; clear:both; display:block;}
+    .lst li {width: 25%; float: left; min-height: 400px; position: relative; overflow: hidden;}
+    .lst li a {margin: 25px; border: 3px solid #333; display: block;}
+    .ani1 li a {height: 80px; width: 80px; position: absolute; animation: ani1 20s;}
+    .ani li a span { display:none ;}
+    .ani1 li.item1 a {animation-duration: 10s;}
+    .ani1 li.item2 a {animation-duration: 15s;}
+    .ani1 li.item3 a {animation-duration: 5s;}
+    .ani1 li.item4 a {animation-duration: 20s;}
+    @keyframes ani1 {
+        0% {left: 0px; border-radius: 44px; top: 0px; background-color: #fff;}
+        20% {left: 200px; border-radius: 0px; top: 200px; background-color: yellow;}
+        40% {left: 0px; border-radius: 44px; top: 0px; background-color: pink;}
+        60% {left: 0px; border-radius: 0px; top: 200px; background-color: deepskyblue;}
+        80% {left: 200px; border-radius: 44px; top: 200px; background-color: lightseagreen;}
+        100% {left:0px; border-radius: 44px; top: 0px; background-color: orange;}
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>css animation property</h2>
+        <p>animation-name(필수속성), animation-duration(필수속성), animation-timing-function, animation-delay, animation-interaction-count(실행횟수), animation-direction(흐름방향), ainimation-fill-mode(실행모드), animation-play-state(재생상태)</p>
+    </div>
+
+
+    <div class="container">
+        <ul class="ani1 lst">
+            <li class="item1"><a href=""><span class="shape">도형1</span></a></li>
+            <li class="item2"><a href=""><span class="shape">도형2</span></a></li>
+            <li class="item3"><a href=""><span class="shape">도형3</span></a></li>
+            <li class="item4"><a href=""><span class="shape">도형4</span></a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

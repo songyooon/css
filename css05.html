@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css5 - 스타일 속성1</title>
+    <style>
+    .box { width: 100px; height: 100px; line-height: 100px; 
+    text-align: center; float:left; margin:15px; }
+    #box1 { background-color:gold; }
+    #box2 { background-color:#ff6600; }
+    #box3 { background-color:#c30; }
+    #box4 { background-color:rgb(255,10,5); }
+    #box5 { background-color: rgba(255,10,5,0.3); }
+    #box6 { background-color: rgb(255,10,5); opacity:0.3; }
+    #box7 { background-color:hsl(60,89%,40%); }
+    #box8 { background-color:hsla(60,89%,40%,0.3); }
+    #box9 { background-color:transparent;  }
+    #box10 { background-color: inherit; }
+    .bgi { width: 100%; min-height:100vh; margin: 0; clear:both; 
+    border:3px solid #333; background-image: url("ive01.png"), url("jungle.jpg"); }
+    #bgi1 { background-size:300px 200px, cover; background-repeat:no-repeat; background-position:center bottom;}
+    #bgi2 { background-size:400px 300px, contain; background-repeat: repeat-x, no-repeat; background-position:center center;}
+    #bgi3 { background-size:300px 200px, 1200px 900px; background-repeat:repeat; background-position:100% 100%; }
+    #bgi4 { background-size:400px 300px, auto; background-repeat: repeat-y; background-position:center center; }
+    #bgi5 { background-size:cover; background-repeat: no-repeat; 
+    background-position: center center; filter:sepia(0.7); background-attachment: fixed; }
+    #bgi6 { background-size:100%; background-repeat: no-repeat; background-position: center center; border:30px solid rgba(255,10,5,0.4); background-clip: content-box; }
+    #bgi7 { background-size:100%; background-repeat: no-repeat; background-position: center center; border:30px solid rgba(255,10,5,0.4); background-clip: content-box; background-origin: padding-box; }
+    #bgi8 { background-repeat: no-repeat; background-size:cover; background-blend-mode:hard-light; }
+    #bgi9 { background-image: linear-gradient(red, yellow, blue); }
+    #bgi10 { background-image: conic-gradient(red, yellow, green); }
+    #bgi11 { background-image: radial-gradient(red, green, blue); }
+    /* 색 -> color picker */
+    /* 그라디언트 -> color zilla  */
+    /* background-image:url("파일경로및이름")  - 배경이미지 지정 */
+    /* background-image:none; - 배경이미지 없음 */
+    /* background-size: px|%|cover(너비에맞게)|contain(높이에맞게) 단위로 -> 가로크기  세로크기  - 배경이미지 크기 */
+@@ -71,6 +76,7 @@
+        <div class="bgi" id="bgi8">배경이미지8</div>
+        <div class="bgi" id="bgi9">배경이미지9</div>
+        <div class="bgi" id="bgi10">배경이미지10</div>
+        <div class="bgi" id="bgi11">배경이미지11</div>
+    </div>
+</body>
+</html>   
